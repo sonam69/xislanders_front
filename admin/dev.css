@@ -1,0 +1,88 @@
+table { border-collapse: collapse;}
+
+table,th,td {border: 1px solid black;}
+
+th {
+    background: chocolate;
+    color: white;
+}
+
+td {
+    background: mediumturquoise;
+}
+
+tbody tr {cursor: pointer;}
+
+tr:hover td,
+tr.selected td {
+    background: indianred;
+    color: white;
+}
+
+.dataTables_paginate{display: none;}
+.dataTables_paginate.is-visible {display: block;}
+
+.group {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 50px 30px;
+    background-color: lightgray;
+}
+
+.group h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.group table {margin-bottom: 20px;}
+
+/*form {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+/*}*/
+
+form .form_item {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: 40px;
+    width: 200px;
+}
+
+form button {
+    width: 150px;
+    background: green;
+    cursor: pointer;
+}
+form button:hover {
+    background: #31b131;
+}
+
+.form_buttons {
+    display: flex;
+}
+
+.form_buttons * + * {
+    margin-left: 30px;
+}
+
+.btn_delete {
+    width: 150px;
+    background: red;
+    cursor: pointer;
+    padding: 18px 28px;
+    margin-top: 60px;
+    pointer-events: none;
+    opacity: 0.5;
+    color: white;
+    line-height: 15px;
+    text-align: center;
+}
+
+.has-selected .btn_delete {
+    pointer-events: initial;
+    opacity: 1;
+}

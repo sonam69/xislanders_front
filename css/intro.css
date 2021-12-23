@@ -1,0 +1,93 @@
+.intro {
+    margin: 0 auto;
+    padding: 5em 0;
+    background: #eceae6;
+}
+
+.intro_content {
+    width: 92%;
+    max-width: 62em;
+    margin: 0 auto;
+    display: block;
+}
+
+.intro h3 {
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+
+    padding-bottom: 32px;
+    margin-bottom: 35px;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 35em;
+    text-align: center;
+}
+
+.intro h3::before {
+    content: "";
+    height: 1px;
+    width: 4em;
+    background-color: #323232;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.intro span {
+    display: flex;
+    justify-content: center;
+}
+
+.intro span:first-of-type {
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    margin-bottom: 1.4em;
+    font-size: .7em;
+    font-weight: 600;
+}
+
+.intro span:last-of-type {
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    /*word-spacing: 9999px;*/
+    font-size: 1em;
+}
+
+.intro ul {
+    display: flex;
+    flex-flow: wrap;
+    /*max-width: 46em;*/
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.intro li {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.intro a {text-align: center;}
+
+@media (min-width: 54em) {
+    /*.intro li {*/
+        /*flex-basis: 33.333%;*/
+        /*max-width: 33.333%;*/
+    /*}*/
+}

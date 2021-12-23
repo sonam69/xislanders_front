@@ -1,0 +1,63 @@
+.basic {
+    padding: 5em 0;
+    background-color: #f8f6f7;
+    color: white;
+    max-width: 100%;
+}
+
+.basic_nobg {background: none;}
+
+.basic_text {
+
+}
+
+.basic_text span {
+    font-size: .7em;
+    display: block;
+    margin: 0 auto 0.5em;
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.basic_text h3 {
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+
+    padding-bottom: 32px;
+    margin-bottom: 35px;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 35em;
+    text-align: center;
+}
+
+.basic_text h3::before {
+    content: "";
+    height: 1px;
+    width: 4em;
+    background-color: white;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.basic_text p {
+    margin: 0 auto;
+    max-width: 48em;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (min-width: 992px) {
+
+}

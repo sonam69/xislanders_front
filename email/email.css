@@ -1,0 +1,240 @@
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus,
+*::selection{
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+  background-color: transparent;
+}
+
+
+#contact_form {
+    margin-top: 70px;
+}
+
+#contact_form .container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact_form button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form_item {
+    width: 500px;
+    max-width: 100%;
+    position: relative;
+}
+
+.form_item:first-child { margin-top: 30px; }
+
+.form_item + .form_item {
+    margin-top: 50px;
+}
+
+.form_item input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding: 0 0 10px 10px;
+    color: white;
+}
+
+.form_item input.error {border-color: red;}
+
+.form_item input.error + label::after {
+    content: "!";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 20px;
+}
+
+.form_item label {
+    position: absolute;
+    /*bottom: 13px;*/
+    /*left: 10px;*/
+    width: 100%;
+    bottom: 10px;
+    left: 7px;
+    color: white;
+    transition: bottom 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.form_item input:focus + label,
+.form_item textarea:focus + label,
+.hasValue + label {
+    bottom: 35px;
+    font-size: 14px;
+    color: #00ff41;
+}
+
+
+/*****text area*****/
+
+.form_item + .form_item.textarea {
+    margin-top: 50px;
+}
+
+.form_item textarea {
+    width: 100%;
+    /*height: 200px;*/
+    height: 41px;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding: 0px 10px 0 10px;
+    position: relative;
+    transition: height 0.5s ease;
+    transition-delay: 1.5s;
+    color: white;
+}
+
+.form_item textarea:focus,
+textarea.hasValue {
+    height: 200px;
+    transition-delay: 0s;
+}
+
+.line1,
+.line2,
+.line3 {
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+
+.line1 {
+    width: 1px;
+    height: 0;
+    left: 0;
+    bottom: 10px;
+    transition: height 0.5s ease;
+    transition-delay: 1s;
+}
+.form_item textarea:focus ~ .line1,
+textarea.hasValue ~ .line1 {
+    transition-delay: 0.5s;
+}
+
+
+.line2 {
+    width: 1px;
+    height: 0;
+    top: -5px;
+    right: 0;
+    transition: height 0.5s ease;
+}
+.form_item textarea:focus ~ .line2,
+textarea.hasValue ~ .line2 {
+    transition-delay: 1.5s;
+}
+
+.line3 {
+    height: 1px;
+    width: 0;
+    top: -5px;
+    transition: width 0.5s ease;
+    transition-delay: 0.5s;
+}
+.form_item textarea:focus ~ .line3,
+textarea.hasValue ~ .line3 {
+    transition-delay: 1s;
+}
+
+.form_item textarea:focus ~ .line1,
+.form_item textarea:focus ~ .line2,
+textarea.hasValue ~ .line1,
+textarea.hasValue ~ .line2 {
+    height: 205px;
+}
+
+.form_item textarea:focus ~ .line3,
+textarea.hasValue ~ .line3 {
+    width: 100%;
+}
+
+.form_item textarea + label {
+    bottom: 21px;
+    transition-delay: 1s;
+}
+
+.form_item textarea:focus + label,
+textarea.hasValue + label {
+    bottom: 215px;
+    transition-delay: 0.5s;
+}
+
+@media (min-width: 1200px) {
+    .line1 {bottom: 12px;}
+}
+
+
+
+/******intelinput******/
+.intl-tel-input {
+    display: block;
+}
+
+.intl-tel-input > label {
+    background: #f8f6f7;
+    z-index: 1;
+}
+
+
+.flag-container {
+    right: auto;
+    left: 0;
+}
+
+body .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {background: none;}
+
+.intl-tel-input .country-list {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+body .intl-tel-input .country-list .flag-box {margin-left: 0;}
+
+.intl-tel-input .country-list .country {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.intl-tel-input .country-list .country:hover {background: palegoldenrod;}
+
+.intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name,
+.intl-tel-input .country-list .country .dial-code {
+    margin-bottom: 0;
+}
+
+.intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name {
+    display: flex;
+    width: 175px;
+    white-space: normal;
+    text-align: left;
+    margin-left: 20px;
+}
+

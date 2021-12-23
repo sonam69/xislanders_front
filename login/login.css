@@ -1,0 +1,33 @@
+#log_in_form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: calc(100% - 30px);
+    margin: 100px auto;
+}
+
+#log_in_form label {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#login_password,
+#login_email {
+    height: 60px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 20px;
+}
+#login_password {margin-top: 20px;}
+
+
+#log_in_form input[type=submit] {
+    height: 60px;
+}
+
+#error_message {
+    margin-bottom: 10px;
+    text-align: center;
+    color: orangered;
+    font-size: 18px;
+}

@@ -1,0 +1,203 @@
+.confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.confirmation::before {
+    content: "";
+    height: 250px;
+    width: 100%;
+    background: url("../imgs/confirmation_wraves.svg") no-repeat bottom center;
+    background-size: cover;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+.confirmation .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 68px 33px 120px;
+
+    border: 2px solid #D0D8E6;
+
+    width: 340px;
+    max-width: calc(100% - 40px);
+    flex: none;
+    position: relative;
+}
+
+.confirmation h2 {
+    font-family: "gotham","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.52px;
+    margin-bottom: 18px;
+    color: #46439B;
+    text-align: center;
+}
+.confirmation h2::before {content: none;}
+
+.confirmation p {
+    color: #00ff41;
+    text-align: center;
+}
+
+.confirmation span {
+    width: 100px;
+    /* background-color: white; */
+    position: absolute;
+}
+
+.confirmation span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    /* background-color: #f8f6f7; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.confirmation span::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #00ff41 url("../imgs/check_white.svg") no-repeat center;
+}
+
+.confirmation .link_wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -9px ;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0 33px;
+    /* background-color: #f8f6f7; */
+}
+
+.confirmation a.circularLink {
+    color: black;
+
+    background: linear-gradient(135deg, #00ff41 50%, white 50.5%) no-repeat 100% 100%;
+    background-size: 200% 200%;
+    transition: background-position 0.8s ease;
+}
+
+.confirmation a.circularLink:hover {
+    background-position: 0 0;
+}
+
+
+@media (min-width: 768px) {
+    .confirmation::before {
+        height: 100%;
+        width: 350px;
+        bottom: auto;
+        top: 0;
+        background-image: url(../imgs/confirmation_waves_desktop.svg);
+        background-size: auto;
+        background-position: left 170px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .confirmation {
+        /*min-height: calc(100vh - 190px);*/
+    }
+
+    .confirmation .content {
+        width: 566px;
+        padding: 89px 45px 148px;
+    }
+
+    .confirmation h2 {
+        font-size: 42px;
+        color: #00ff41;
+        margin-bottom: 25px;
+    }
+
+    .confirmation span::before {
+        height: 66px;
+        width: 66px;
+    }
+
+}
+
+
+
+/*****/
+.circularLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+    border: 1px solid #00ff41;
+    border-radius: 50%;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.39px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #00ff41 50%, rgba(158, 182, 209, 0.12) 50.5%) no-repeat 100% 100%;
+    background-size: 200% 200%;
+    transition: background-position 0.8s ease;
+}
+
+.confirmation a.circularLink {
+    color: black;
+    background: linear-gradient(135deg, #00ff41 50%, #f8f6f7 50.5%) no-repeat 100% 100%;
+    background-size: 200% 200%;
+    transition: background-position 0.8s ease;
+}
+
+@media (min-width: 992px) {
+    .circularLink {
+        height: 167px;
+        width: 167px;
+        font-size: 18px;
+        background: linear-gradient(135deg, #00ff41 50%, transparent 50.5%) no-repeat 100% 100%;
+        background-size: 200% 200%;
+    }
+}
+
+/* .confirmation_page .navigation a,
+.confirmation_page .navigation > .no_link,
+.confirmation_page .language{
+    color: #323232;
+} */
+
+.confirmation_page .navigation a:hover,
+.confirmation_page .navigation > .no_link:hover,
+.confirmation_page .language:hover{
+    color: #00ff41;
+}
+
+.no_link span::after, .no_link span::before {background-color: #323232;}
+
+.confirmation_page .logo {
+    background: url("../imgs/logo_black.png") no-repeat center;
+    background-size: contain;
+    width: 70px;
+}
+
+.confirmation_page #menu span {
+    border-color: #323232;
+}

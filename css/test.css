@@ -1,0 +1,135 @@
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+.test_image {
+    height: 400px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+}
+
+.test_image::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+.test_image.is-visible::before {width: 0;}
+
+.test_content {
+    width: calc(100% - 30px);
+    max-width: 500px;
+    /*background-color: #f7f7f7;*/
+    padding: 50px 50px;
+    margin-top: -100px;
+    box-shadow: 0 4px 10px 0 lightgrey;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+}
+
+/*.test_content::before,*/
+/*.test_content::after {*/
+    /*content: "";*/
+    /*height: 1px;*/
+    /*width: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*background: #000000;*/
+    /*position: absolute;*/
+/*}*/
+/*.test_content::before {*/
+    /*top: 15px;*/
+/*}*/
+/*.test_content::after {*/
+    /*bottom: 15px;*/
+/*}*/
+
+
+
+
+.test_content span {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: -1;
+}
+
+
+
+.test_content h2 {
+
+}
+
+.test_content p {
+
+}
+
+.test_content a {
+
+}
+
+@media (min-width: 992px) {
+    .test {flex-direction: row;}
+
+    .test_image {
+        height: 530px;
+        /*width: calc(5 * (100% - 330px) / 12 + 120px);*/
+        width:calc(7 * (100% - 330px) / 12 + 180px);
+        transform: translateZ(-1px) scale(1.1);
+    }
+
+    .test_content {
+        margin-top: 0;
+        margin-left: -60px;
+        box-shadow: none;
+    }
+
+}
+
+
+/*****test right******/
+
+.test-reverse {
+
+}
+
+.test-reverse {
+
+}
+
+@media (min-width: 992px) {
+    .test-reverse .test_content {
+        order: -1;
+        margin-left: 0;
+        margin-right: -60px;
+    }
+}
+
+/****basic****/
+.basic {
+    max-width: 750px;
+    margin-bottom: 65px;
+}
+
+.basic h2 {
+
+}
+
+@media (min-width: 992px) {
+    .basic {
+        margin-bottom: 75px;
+    }
+}

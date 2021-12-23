@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /login.php
+sitemap: https://evetiriaconsultants.com/sitemap.xml
