@@ -15,16 +15,16 @@ sessionStart();
     <title>Evetiria Consultants</title>
     
     <meta property="og:title" content="Evetiria">
-    <meta property="og:url" content="https://evetiriaconsultants.com/">
-    <meta property="og:image" content="https://evetiriaconsultants.com/imgs/social_image_evetiria.jpg">
+    <meta property="og:url" content="https://xislanders.com/">
+    <meta property="og:image" content="https://xislanders.com/imgs/social_image_evetiria.jpg">
     <meta property="og:description" content="EVETIRIA, located in Nicosia (Agioi Omologites), is a company providing real estate consultancy services and valuations.">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Evetiria" />
-    <meta name="twitter:url" content="https://evetiriaconsultants.com/" />
+    <meta name="twitter:url" content="https://xislanders.com/" />
     <meta name="twitter:description" content="EVETIRIA, located in Nicosia (Agioi Omologites), is a company providing real estate consultancy services and valuations." />
-    <meta name="twitter:image" content="https://evetiriaconsultants.com/imgs/social_image_evetiria.jpg"/>
+    <meta name="twitter:image" content="https://xislanders.com/imgs/social_image_evetiria.jpg"/>
     
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap&subset=greek" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css" />
