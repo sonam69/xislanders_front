@@ -1,22 +1,24 @@
 .textimg_img {
   display: block;
   max-height: 400px;
+  max-width: 100%;
   margin: 0 auto 0.75em auto;
 }
 
-.textimg-imgRight .textimg_img,
-.textimg-imgLeft .textimg_img {
-  max-height: 400px;
-  max-width: 500px;
+.textimg-wide .textimg_img {
+  height: auto;
+  width: 500px;
+  max-width: 100%;
+  max-height: none;
 }
 
 .textimg-imgRight .textimg_img {
   float: right;
-  margin: 0 0 0.75em  0.75em;
+  margin: 0 0 0.75em  1.1em;
 }
 .textimg-imgLeft .textimg_img {
   float: left;
-  margin: 0 0.75em 0.75em  0;
+  margin: 0 1.1em 0.75em  0;
 }
 
 @media (min-width: 992px) {
@@ -24,6 +26,7 @@
 
   }
 }
+
 
 /* .textimg_img {
   max-width: 100%;
