@@ -3,26 +3,26 @@ include_once("../external/header.php");
 sessionStart();
 ?>
 <!DOCTYPE html>
-<html <?php echo ( array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR" ) ? 'lang="el"' : 'lang="en"' ?>>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="EVETIRIA, located in Nicosia (Agioi Omologites), is a company providing real estate consultancy services and valuations.">
-    <meta name="keywords" content="Evetiria, consultants, valuations, assessment, management, feasibility, Cyprus, real estate, property">
+    <meta name="description" content="NFT GAME">
+    <meta name="keywords" content="nft, game, crypto, online game, nft game, xislanders, x islanders">
     <meta name="author" content="Tzelepis Manos">
     <meta http-equiv="content-language" content="<?php echo ( array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR" ) ? 'el-gr'  : 'en-us' ?>">
     <title>Confirmation | Evetiria Consultants</title>
     
-    <meta property="og:title" content="Evetiria">
+    <meta property="og:title" content="Xislanders">
     <meta property="og:url" content="https://xislanders.com/">
     <meta property="og:image" content="https://xislanders.com/imgs/social_image_evetiria.jpg">
-    <meta property="og:description" content="EVETIRIA, located in Nicosia (Agioi Omologites), is a company providing real estate consultancy services and valuations.">
+    <meta property="og:description" content="NFT GAME">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Evetiria" />
+    <meta name="twitter:title" content="Xislanders" />
     <meta name="twitter:url" content="https://xislanders.com/" />
-    <meta name="twitter:description" content="EVETIRIA, located in Nicosia (Agioi Omologites), is a company providing real estate consultancy services and valuations." />
+    <meta name="twitter:description" content="NFT GAME" />
     <meta name="twitter:image" content="https://xislanders.com/imgs/social_image_evetiria.jpg"/>
     
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap&subset=greek" rel="stylesheet">
@@ -47,7 +47,7 @@ sessionStart();
         </header>
         <div class="overlay"></div>
         <main>
-            <h1>Confirmation | Evetiria Consultants</h1>
+            <h1>Confirmation | Xislanders</h1>
             <div class="confirmation entity entity-paragraphs-item paragraphs-item-confirmation-message" about="" typeof="">
                 <div class="content">
                     <span></span>
