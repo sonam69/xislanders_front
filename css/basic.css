@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-.basic_text h3 {
+.basic_text h2 {
     font-family: "gotham","Helvetica Neue",sans-serif;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-.basic_text h3::before {
+.basic_text h2::before {
     content: "";
     height: 1px;
     width: 4em;
