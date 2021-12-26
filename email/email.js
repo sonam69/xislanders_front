@@ -26,11 +26,11 @@ $(document).ready(function() // execute when the DOM is fully loaded
     {
         e.preventDefault();
         $("#contact_form button").attr("disabled", true);
-        if(!phone_number_check($('#phone_contact').val())) {
-            $('#phone_contact').addClass('error');
-            document.getElementById('send_button').disabled=false;
-            return;
-        }
+        // if(!phone_number_check($('#phone_contact').val())) {
+        //     $('#phone_contact').addClass('error');
+        //     document.getElementById('send_button').disabled=false;
+        //     return;
+        // }
         $.ajax(
         {
             type: this.method, //By default, Ajax requests are sent using the GET HTTP method,  with this we use POST.

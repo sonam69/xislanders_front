@@ -8,10 +8,6 @@
             <input id="contact_email" name="email" type="email" required="">
             <label for="contact_email">Email</label>
         </div>
-        <div class="form_item fadeInUp">
-            <input type="tel" id="phone_contact" name="phone_contact" autocomplete="off" required="">
-            <label for="phone_contact"><?php echo (array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR") ? "Τηλέφωνο" : "Phone Number" ?></label>
-        </div>
         <div class="form_item textarea fadeInUp">
             <textarea id="contact_msg" name="body" required=""></textarea>
             <label for="contact_msg"><?php echo (array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR") ? "Μήνυμα" : "Message" ?></label>
