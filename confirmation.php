@@ -11,7 +11,7 @@ sessionStart();
     <meta name="keywords" content="nft, game, crypto, online game, nft game, xislanders, x islanders">
     <meta name="author" content="Tzelepis Manos">
     <meta http-equiv="content-language" content="<?php echo ( array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR" ) ? 'el-gr'  : 'en-us' ?>">
-    <title>Confirmation | Evetiria Consultants</title>
+    <title>Confirmation | Xislanders</title>
     
     <meta property="og:title" content="Xislanders">
     <meta property="og:url" content="https://xislanders.com/">

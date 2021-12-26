@@ -11,9 +11,9 @@
     <div class="footer_content">
         <div class="footer_contact">
             <div class="footer_social">
-                <a href="https://www.facebook.com/Evetiria-Consultants-107410997538265" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/facebook_sprite.png')"></a>
-                <a href="https://twitter.com/evetiria" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/twitter_sprite.png')"></a>
-                <a href="https://www.linkedin.com/company/evetiria-consultants" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/linkedin_sprite.png')"></a>
+                <a href="/" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/facebook_sprite.png')"></a>
+                <a href="/" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/twitter_sprite.png')"></a>
+                <a href="/" target="_blank" class="fadeIn delay400ms" style="background-image:url('../imgs/linkedin_sprite.png')"></a>
             </div>
             <div class="footer_contactBtn restrained delay400ms">
                 <h3 class="fadeInUp delay500ms"><?php echo (array_key_exists('language', $_SESSION) && $_SESSION["language"] === "GR") ? "ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ" : "Get in touch" ?></h3>
@@ -21,12 +21,12 @@
             </div>
         </div>
         <ul class="footer_list">
-            <li><a class="sliding_underline fadeInUp delay600ms" href="services">Home</a></li>
-            <li><a class="sliding_underline fadeInUp delay700ms" href="company">White paper</a></li>
+            <li><a class="sliding_underline fadeInUp delay600ms" href="/">Home</a></li>
+            <li><a class="sliding_underline fadeInUp delay700ms" href="/">White paper</a></li>
         </ul>
         <ul class="footer_list">
             <li><a class="sliding_underline fadeInUp delay800ms" href="/">Trustline</a></li>
-            <li><a class="sliding_underline fadeInUp delay900ms" href="privacy">Discord</a></li>
+            <li><a class="sliding_underline fadeInUp delay900ms" href="/">Discord</a></li>
 
         </ul>
         <p class="footer_copyright">© <?php echo date('Y'); ?></p>
